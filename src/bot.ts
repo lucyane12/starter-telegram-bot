@@ -153,13 +153,13 @@ for (const effect of allEffects) {
 
 // Handle the /about command
 const aboutUrlKeyboard = new InlineKeyboard().url(
-  "Host your own bot for free.",
-  "https://cyclic.sh/"
+  "Kunjungi website api saya gratis",
+  "https://christ.cyclic.cloud"
 );
 
 // Suggest commands in the menu
 bot.api.setMyCommands([
-  { command: "yo", description: "Be greeted by the bot" },
+  { command: "bot", description: "Ya ada yang bisa saya bantu?" },
   {
     command: "effect",
     description: "Apply text effects on the text. (usage: /effect [text])",
@@ -167,12 +167,7 @@ bot.api.setMyCommands([
 ]);
 
 // Handle all other messages and the /start command
-const introductionMessage = `Hello! I'm a Telegram bot.
-I'm powered by Cyclic, the next-generation serverless computing platform.
-
-<b>Commands</b>
-/yo - Be greeted by me
-/effect [text] - Show a keyboard to apply text effects to [text]`;
+const introductionMessage = `Halo saya adalah bot dari zeev.io`;
 
 const replyWithIntro = (ctx: any) =>
   ctx.reply(introductionMessage, {
